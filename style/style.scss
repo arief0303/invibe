@@ -1,0 +1,95 @@
+body {
+    background: linear-gradient(270deg, #fe7f7f, #5d58f6);
+    background-size: 400% 400%;
+
+    -webkit-animation: grad 30s ease infinite;
+    -moz-animation: grad 30s ease infinite;
+    -o-animation: grad 30s ease infinite;
+    animation: grad 30s ease infinite;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid #fff;
+    color: #000;
+    transition: all 0.3s;
+    border-radius: 50px;
+}
+
+.btn:hover,
+.btn:active {
+    color: #fff;
+    background: #1DB954;
+    border-color: #1DB954;
+}
+
+@-webkit-keyframes grad {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes grad {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-o-keyframes grad {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes grad {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
