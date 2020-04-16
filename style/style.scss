@@ -1,12 +1,14 @@
 body {
-    background: linear-gradient(270deg, #fe7f7f, #5d58f6);
+    background: linear-gradient(180deg, #5d58f6, #fe7f7f);
     background-size: 400% 400%;
 
-    -webkit-animation: grad 30s ease infinite;
-    -moz-animation: grad 30s ease infinite;
-    -o-animation: grad 30s ease infinite;
-    animation: grad 30s ease infinite;
+    -webkit-animation: grad 14s ease infinite;
+    -moz-animation: grad 14s ease infinite;
+    -o-animation: grad 14s ease infinite;
+    animation: grad 14s ease infinite;
 }
+
+@import "anim";
 
 body,
 h1,
@@ -36,60 +38,4 @@ p {
     color: #fff;
     background: #1DB954;
     border-color: #1DB954;
-}
-
-@-webkit-keyframes grad {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-@-moz-keyframes grad {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-@-o-keyframes grad {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-@keyframes grad {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
 }
