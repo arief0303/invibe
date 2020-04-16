@@ -9,6 +9,9 @@ body {
 }
 
 @import "anim";
+@import "scrollbarHider";
+
+body{overflow: hidden;}
 
 body,
 h1,
