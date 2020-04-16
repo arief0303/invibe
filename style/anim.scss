@@ -1,20 +1,82 @@
+body {
+    background: linear-gradient(180deg, #5d58f6, #fe7f7f);
+    background-size: 400% 400%;
+
+    -webkit-animation: grad 14s ease infinite;
+    -moz-animation: grad 14s ease infinite;
+    -o-animation: grad 14s ease infinite;
+    animation: grad 14s ease infinite;
+}
+
 @-webkit-keyframes grad {
-    0%{background-position:90% 0%}
-    50%{background-position:11% 100%}
-    100%{background-position:90% 0%}
+    0% {
+        background-position: 90% 0%
+    }
+
+    50% {
+        background-position: 11% 100%
+    }
+
+    100% {
+        background-position: 90% 0%
+    }
 }
+
 @-moz-keyframes grad {
-    0%{background-position:90% 0%}
-    50%{background-position:11% 100%}
-    100%{background-position:90% 0%}
+    0% {
+        background-position: 90% 0%
+    }
+
+    50% {
+        background-position: 11% 100%
+    }
+
+    100% {
+        background-position: 90% 0%
+    }
 }
+
 @-o-keyframes grad {
-    0%{background-position:90% 0%}
-    50%{background-position:11% 100%}
-    100%{background-position:90% 0%}
+    0% {
+        background-position: 90% 0%
+    }
+
+    50% {
+        background-position: 11% 100%
+    }
+
+    100% {
+        background-position: 90% 0%
+    }
 }
+
 @keyframes grad {
-    0%{background-position:90% 0%}
-    50%{background-position:11% 100%}
-    100%{background-position:90% 0%}
+    0% {
+        background-position: 90% 0%
+    }
+
+    50% {
+        background-position: 11% 100%
+    }
+
+    100% {
+        background-position: 90% 0%
+    }
+}
+
+@-webkit-keyframes pulse {
+    from {
+        // background-color: #fff;
+        -webkit-box-shadow: 0 0 20px #1DB954;
+    }
+
+    50% {
+        // background-color: none;
+        -webkit-box-shadow: none;
+    }
+
+    to {
+        // background-color: #fff;
+        -webkit-box-shadow: 0 0 20px #1DB954;
+    }
 }
