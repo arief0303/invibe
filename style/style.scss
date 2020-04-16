@@ -1,5 +1,10 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 body {
     margin: 0;
+    padding: 10%;
 
     background: linear-gradient(180deg, #5d58f6, #fe7f7f);
     background-size: 400% 400%;
@@ -13,7 +18,9 @@ body {
 @import "anim";
 @import "scrollbarHider";
 
-body{overflow: hidden;}
+body {
+    overflow: hidden;
+}
 
 body,
 h1,
@@ -36,11 +43,13 @@ p {
     color: #000;
     transition: all 0.3s;
     border-radius: 50px;
+    text-align: center;
 }
 
 .btn:hover,
 .btn:active {
     color: #fff;
-    background: #1DB954;
-    border-color: #1DB954;
+    // background: #1DB954; spotify color
+    // border-color: #1DB954;
+    background: #5d58f6;
 }

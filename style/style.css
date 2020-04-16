@@ -1,5 +1,10 @@
+* {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 body {
   margin: 0;
+  padding: 10%;
   background: -webkit-gradient(linear, left top, left bottom, from(#5d58f6), to(#fe7f7f));
   background: linear-gradient(180deg, #5d58f6, #fe7f7f);
   background-size: 400% 400%;
@@ -71,12 +76,12 @@ p {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border-radius: 50px;
+  text-align: center;
 }
 
 .btn:hover,
 .btn:active {
   color: #fff;
-  background: #1DB954;
-  border-color: #1DB954;
+  background: #5d58f6;
 }
 /*# sourceMappingURL=style.css.map */

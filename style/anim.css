@@ -1,0 +1,24 @@
+@-webkit-keyframes grad {
+  0% {
+    background-position: 90% 0%;
+  }
+  50% {
+    background-position: 11% 100%;
+  }
+  100% {
+    background-position: 90% 0%;
+  }
+}
+
+@keyframes grad {
+  0% {
+    background-position: 90% 0%;
+  }
+  50% {
+    background-position: 11% 100%;
+  }
+  100% {
+    background-position: 90% 0%;
+  }
+}
+/*# sourceMappingURL=anim.css.map */
