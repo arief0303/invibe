@@ -8,5 +8,7 @@
 ::-webkit-scrollbar {
     display: none;
 }*/
-
-html{overflow: hidden;}
+html {
+  overflow: hidden;
+}
+/*# sourceMappingURL=scrollbarHider.css.map */
