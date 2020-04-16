@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA;;;;;;;;;GASG;AAEH,AAAA,IAAI,CAAA;EAAC,QAAQ,EAAE,MAAM;CAAG",
-    "sources": [
-        "scrollbarHider.scss"
-    ],
-    "names": [],
-    "file": "scrollbarHider.css"
-}
