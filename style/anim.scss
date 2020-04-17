@@ -64,6 +64,23 @@ body {
     }
 }
 
+@keyframes pulse {
+    from {
+        // background-color: #fff;
+        -webkit-box-shadow: 0 0 20px #1DB954;
+    }
+
+    50% {
+        // background-color: none;
+        -webkit-box-shadow: none;
+    }
+
+    to {
+        // background-color: #fff;
+        -webkit-box-shadow: 0 0 20px #1DB954;
+    }
+}
+
 @-webkit-keyframes pulse {
     from {
         // background-color: #fff;
