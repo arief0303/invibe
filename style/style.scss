@@ -1,6 +1,8 @@
 @import "anim";
 
-html{overflow: hidden;}
+html {
+    overflow: hidden;
+}
 
 * {
     font-family: 'Josefin Sans', sans-serif;
@@ -22,48 +24,76 @@ body {
     overflow: hidden;
 }
 
-//buttons
-.btnPurple {
-    text-decoration: none;
+input {
+    font-size: inherit;
     background-color: #fff;
-    outline: none;
-    cursor: pointer;
-    padding: 10px;
     border: 2px solid #fff;
+    border-radius: 50px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+}
+
+//Buttons
+.btnContrast {
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 50px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
     color: #000;
     transition: all 0.3s;
+    cursor: pointer;
+}
+
+.btnPurple {
+    background-color: #fff;
+    border: 2px solid #fff;
     border-radius: 50px;
+    outline: none;
     text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+    transition: all 0.3s;
+    cursor: pointer;
 }
 
 .btnViolet {
-    text-decoration: none;
     background-color: #fff;
-    outline: none;
-    cursor: pointer;
-    padding: 10px;
     border: 2px solid #fff;
+    border-radius: 50px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
     color: #000;
     transition: all 0.3s;
-    border-radius: 50px;
-    text-align: center;
+    cursor: pointer;
 }
 
 .btnGreen {
-    text-decoration: none;
     background-color: #fff;
-    outline: none;
-    cursor: pointer;
-    padding: 10px;
     border: 2px solid #fff;
+    border-radius: 50px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
     color: #000;
     transition: all 0.3s;
-    border-radius: 50px;
-    text-align: center;
+    cursor: pointer;
 
+    // Pulse emphasis
+    /*
     -webkit-animation-name: pulse;
     -webkit-animation-duration: 4s;
     -webkit-animation-iteration-count: infinite;
+    */
 }
 
 .btnPurple:hover,
@@ -270,7 +300,7 @@ body {
 .navbar {
     position: absolute;
     box-shadow: 2px 2px 30px #000;
-    
+
     display: inline-flex;
     bottom: 0;
     left: 0;

@@ -13,7 +13,32 @@ body {
     overflow: hidden;
 }
 
+input {
+    font-size: inherit;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+}
+
 //buttons
+.btnContrast {
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 50px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
 .btnPurple {
     text-decoration: none;
     background-color: #fff;
