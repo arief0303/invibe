@@ -76,49 +76,77 @@ body {
   overflow: hidden;
 }
 
-.btnPurple {
-  text-decoration: none;
+input {
+  font-size: inherit;
   background-color: #fff;
-  outline: none;
-  cursor: pointer;
-  padding: 10px;
   border: 2px solid #fff;
+  border-radius: 50px;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+}
+
+.btnContrast {
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 50px;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
   color: #000;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btnPurple {
+  background-color: #fff;
+  border: 2px solid #fff;
   border-radius: 50px;
+  outline: none;
   text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 
 .btnViolet {
-  text-decoration: none;
   background-color: #fff;
-  outline: none;
-  cursor: pointer;
-  padding: 10px;
   border: 2px solid #fff;
+  border-radius: 50px;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
   color: #000;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border-radius: 50px;
-  text-align: center;
+  cursor: pointer;
 }
 
 .btnGreen {
-  text-decoration: none;
   background-color: #fff;
-  outline: none;
-  cursor: pointer;
-  padding: 10px;
   border: 2px solid #fff;
+  border-radius: 50px;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
   color: #000;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border-radius: 50px;
-  text-align: center;
-  -webkit-animation-name: pulse;
-  -webkit-animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
+  cursor: pointer;
+  /*
+    -webkit-animation-name: pulse;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    */
 }
 
 .btnPurple:hover,
