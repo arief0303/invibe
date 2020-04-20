@@ -31,6 +31,22 @@
             left: 0;
         }
 
+        #loginInputComponent {
+            position: fixed;
+
+            display: none;
+            /* display: block; */
+
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+
+            background-color: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(4px);
+            top: 0;
+            left: 0;
+        }
+
         #mainTitle {
             font-size: 4em;
             color: #fff;
@@ -46,15 +62,28 @@
     <div id='loginOverlay'>
         <a id='closeButton' onclick="closeLoginOverlay()" style="position: fixed;top: 0px;right: 10px;font-size: 3em;">✕</a>
         <div class="container1">
-            <a href="loginInput.html" class="btnPurple">Login</i></a>
+            <a onclick="inputLogin()" class="btnPurple">Login</i></a>
             <p>Or</p>
             <a class="btnGreen">Login with Spotify&nbsp;<i class="fa fa-spotify"></i></a>
         </div>
     </div>
 
+    <div id="loginInputComponent" style="position: fixed;">
+        <a id='closeButton' onclick="closeLoginInputComponent()" style="position: fixed;top: 0px;right: 10px;font-size: 3em;">✕</a>
+        <div class="container1">
+            <p>Username</p>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <p>Password</p>
+            <input type="text" id="lname" name="lname" value="Doe"><br>
+            <a onclick="inputLogin()" class="btnPurple">Login</i></a>
+        </div>
+        <br>
+        <a href="login.html" class="btnViolet">Login</i></a>
+    </div>
+
     <div class="container1">
         <p id="mainTitle">invibe</p>
-        <a href="signup.html" class="btnViolet">Sign up</i></a>
+        <a class="btnViolet">Sign up</i></a>
         <br />
         <a onclick="showLoginOverlay()" class="btnPurple">Login</i></a>
         <br />
@@ -73,6 +102,15 @@
 
         const closeLoginOverlay = () => {
             document.getElementById('loginOverlay').style.display = "none";
+        };
+
+        const closeLoginInputComponent = () => {
+            document.getElementById('loginInputComponent').style.display = "none";
+        };
+
+        const inputLogin = () => {
+            document.getElementById('loginOverlay').style.display = "none";
+            document.getElementById('loginInputComponent').style.display = "block";
         };
     </script>
     <a href="main.html" style="position: fixed;bottom: 10px;">Go to main menu</i></a>
