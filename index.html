@@ -60,7 +60,8 @@
 
 <body>
     <div id='loginOverlay'>
-        <a id='closeButton' onclick="closeLoginOverlay()" style="position: fixed;top: 0px;right: 10px;font-size: 3em;">✕</a>
+        <a id='closeButton' onclick="closeLoginOverlay()"
+            style="position: fixed;top: 0px;right: 10px;font-size: 3em;">✕</a>
         <div class="container1">
             <a onclick="inputLogin()" class="btnPurple">Login</i></a>
             <p>Or</p>
@@ -69,32 +70,31 @@
     </div>
 
     <div id="loginInputComponent" style="position: fixed;">
-        <a id='closeButton' onclick="closeLoginInputComponent()" style="position: fixed;top: 0px;right: 10px;font-size: 3em;">✕</a>
+        <a id='closeButton' onclick="closeLoginInputComponent()"
+            style="position: fixed;top: 0px;right: 10px;font-size: 3em;">✕</a>
         <div class="container1">
             <p>Username</p>
-            <input type="text" id="fname" name="fname" value="John"><br>
+            <input type="text" id="fname" name="fname" value="John Appleseed"><br>
             <p>Password</p>
-            <input type="text" id="lname" name="lname" value="Doe"><br>
-            <a onclick="inputLogin()" class="btnPurple">Login</i></a>
+            <input type="text" id="lname" name="lname" value="******"><br>
+            <a href="main.html" class="btnViolet">Login</i></a>
+
         </div>
         <br>
-        <a href="login.html" class="btnViolet">Login</i></a>
     </div>
 
     <div class="container1">
-        <p id="mainTitle">invibe</p>
+        <p id="mainTitle">invibe</p><br>
         <a class="btnViolet">Sign up</i></a>
         <br />
         <a onclick="showLoginOverlay()" class="btnPurple">Login</i></a>
         <br />
-
-
-        <!-- <a href="main.html" class="btnGreen">Sign up with Spotify&nbsp;<i class="fa fa-spotify"></i></a>
-            <hr style="width: inherit;border-top: 2px solid #fff;">
-            <a href="main.html" class="btnGreen">Login with Spotify&nbsp;<i class="fa fa-spotify"></i></a>
-            <br />
-            <a href="main.html" class="btnGreen">Login with Spotify&nbsp;<i class="fa fa-spotify"></i></a> -->
     </div>
+
+    <a href="main.html" style="position: fixed;bottom: 10px;">Go to main menu</a>
+    <label href="main.html"
+        style="position: fixed;bottom: 7px;right: 10px;color: rgba(255, 255, 255, 0.25);">ver0.0.1</label>
+
     <script>
         const showLoginOverlay = () => {
             document.getElementById('loginOverlay').style.display = "block";
@@ -113,7 +113,6 @@
             document.getElementById('loginInputComponent').style.display = "block";
         };
     </script>
-    <a href="main.html" style="position: fixed;bottom: 10px;">Go to main menu</i></a>
 </body>
 
 </html>
