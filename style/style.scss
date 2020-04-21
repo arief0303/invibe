@@ -37,6 +37,8 @@ input {
     color: #000;
 }
 
+#closeButton {position: fixed;top: 0px;right: 10px;font-size: 3em;}
+
 //Buttons
 .btnContrast {
     display: inherit;
@@ -97,6 +99,19 @@ input {
     */
 }
 
+.btnBlue {
+    display: inherit;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+    cursor: pointer;
+}
+
 .btnPurple:hover,
 .btnPurple:active {
     color: #fff;
@@ -116,6 +131,12 @@ input {
     -webkit-animation: none;
 }
 
+.btnBlue:hover,
+.btnBlue:active {
+    color: #fff;
+    background: #3b5998 ;
+}
+
 //navbar
 .navbar {
     position: absolute;
@@ -131,7 +152,7 @@ input {
     width: 100%;
     font-size: 2em;
     border-radius: 25px 25px 0px 0px;
-    z-index: 99;
+    z-index: 98;
 
     -webkit-transition: opacity 2s ease-in;
     -moz-transition: opacity 2s ease-in;

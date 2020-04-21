@@ -264,6 +264,13 @@ input {
   color: #000;
 }
 
+#closeButton {
+  position: fixed;
+  top: 0px;
+  right: 10px;
+  font-size: 3em;
+}
+
 .btnContrast {
   display: inherit;
   background-color: #fff;
@@ -321,6 +328,19 @@ input {
     */
 }
 
+.btnBlue {
+  display: inherit;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+  cursor: pointer;
+}
+
 .btnPurple:hover,
 .btnPurple:active {
   color: #fff;
@@ -338,6 +358,12 @@ input {
   color: #fff;
   background-color: #1DB954;
   -webkit-animation: none;
+}
+
+.btnBlue:hover,
+.btnBlue:active {
+  color: #fff;
+  background: #3b5998;
 }
 
 .navbar {
@@ -360,7 +386,7 @@ input {
   width: 100%;
   font-size: 2em;
   border-radius: 25px 25px 0px 0px;
-  z-index: 99;
+  z-index: 98;
   -webkit-transition: opacity 2s ease-in;
   transition: opacity 2s ease-in;
 }
