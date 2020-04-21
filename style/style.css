@@ -282,6 +282,8 @@ input {
   padding: 10px;
   color: #000;
   cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .btnPurple {
@@ -295,6 +297,8 @@ input {
   padding: 10px;
   color: #000;
   cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .btnViolet {
@@ -308,6 +312,8 @@ input {
   padding: 10px;
   color: #000;
   cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .btnGreen {
@@ -321,6 +327,8 @@ input {
   padding: 10px;
   color: #000;
   cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   /*
     -webkit-animation-name: pulse;
     -webkit-animation-duration: 4s;
@@ -339,6 +347,8 @@ input {
   padding: 10px;
   color: #000;
   cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .btnPurple:hover,
@@ -385,7 +395,7 @@ input {
   height: 75px;
   width: 100%;
   font-size: 2em;
-  border-radius: 25px 25px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
   z-index: 98;
   -webkit-transition: opacity 2s ease-in;
   transition: opacity 2s ease-in;

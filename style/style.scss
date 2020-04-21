@@ -37,7 +37,12 @@ input {
     color: #000;
 }
 
-#closeButton {position: fixed;top: 0px;right: 10px;font-size: 3em;}
+#closeButton {
+    position: fixed;
+    top: 0px;
+    right: 10px;
+    font-size: 3em;
+}
 
 //Buttons
 .btnContrast {
@@ -51,6 +56,7 @@ input {
     padding: 10px;
     color: #000;
     cursor: pointer;
+    transition: all 0.5s;
 }
 
 .btnPurple {
@@ -64,6 +70,7 @@ input {
     padding: 10px;
     color: #000;
     cursor: pointer;
+    transition: all 0.5s;
 }
 
 .btnViolet {
@@ -77,6 +84,7 @@ input {
     padding: 10px;
     color: #000;
     cursor: pointer;
+    transition: all 0.5s;
 }
 
 .btnGreen {
@@ -90,6 +98,8 @@ input {
     padding: 10px;
     color: #000;
     cursor: pointer;
+    transition: all 0.5s;
+
 
     // Pulse emphasis
     /*
@@ -110,6 +120,7 @@ input {
     padding: 10px;
     color: #000;
     cursor: pointer;
+    transition: all 0.5s;
 }
 
 .btnPurple:hover,
@@ -134,7 +145,7 @@ input {
 .btnBlue:hover,
 .btnBlue:active {
     color: #fff;
-    background: #3b5998 ;
+    background: #3b5998;
 }
 
 //navbar
@@ -151,7 +162,7 @@ input {
     height: 75px;
     width: 100%;
     font-size: 2em;
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
     z-index: 98;
 
     -webkit-transition: opacity 2s ease-in;
