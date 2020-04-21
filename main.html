@@ -28,7 +28,7 @@
         }
 
         #accountOverlay {
-            overflow: auto !important;
+            overflow-y: auto !important;
             position: fixed;
 
             display: none;
@@ -38,8 +38,26 @@
             height: 100%;
             flex-direction: column;
 
-            background-color: rgba(255, 255, 255, 0.75);
-            backdrop-filter: blur(4px);
+            background-color: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(7px);
+            top: 0;
+            left: 0;
+            z-index: 99;
+        }
+
+        #chatOverlay {
+            overflow-y: auto !important;
+            position: fixed;
+
+            display: none;
+            /* display: block; */
+
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(7px);
             top: 0;
             left: 0;
             z-index: 99;
@@ -134,6 +152,13 @@
         <div class="right-action">Right</div>
     </div>-->
 
+    <div id="chatOverlay">
+        <a id='closeButton' onclick="closeAccOverlay()">✕</a>
+        <div class="container1">
+            <div style="background-color: #fff;margin: 20px;height: 200px;width: 85%;box-shadow: 0px 0px 15px;border-radius: 10px;"></div>
+        </div>
+    </div>
+
     <div id="accountOverlay">
         <a id='closeButton' onclick="closeAccOverlay()">✕</a>
         <div class="container1">
@@ -173,19 +198,22 @@
             </div>
         </div>
     </div>
-    </div>
 
     <div class="navbar">
-            <a class="btnPurple"><i class="fas fa-sliders-h"></i></a>
-            <a class="btnPurple"><i class="fas fa-comments"></i></i></a>
-            <!-- <p>invibe</p> -->
-            <a class="btnViolet" onclick="showAccOverlay()"><i class="far fa-user-circle"></i></a>
+        <a class="btnPurple"><i class="fas fa-sliders-h"></i></a>
+        <a class="btnPurple"><i class="fas fa-comments"></i></i></a>
+        <!-- <p>invibe</p> -->
+        <a class="btnViolet" onclick="showAccOverlay()"><i class="far fa-user-circle"></i></a>
     </div>
 
     <script src="swipableCards.js"></script>
     <script>
-        const showAccOverlay = () => {$("#accountOverlay").fadeIn(400);};
-        const closeAccOverlay = () => {$("#accountOverlay").fadeOut(400);};
+        const showAccOverlay = () => {
+            $("#accountOverlay").fadeIn(400);
+        };
+        const closeAccOverlay = () => {
+            $("#accountOverlay").fadeOut(400);
+        };
     </script>
 </body>
 
