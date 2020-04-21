@@ -63,35 +63,7 @@
             z-index: 99;
         }
 
-        .card-image {
-            width: inherit;
-            height: inherit;
-            border-radius: inherit;
-            object-fit: cover;
-        }
-
-        .card-bio {
-            position: fixed;
-
-            bottom: 0;
-            background-color: rgba(255, 255, 255, 0.75);
-            border-radius: inherit;
-            width: inherit;
-            height: 225px;
-            backdrop-filter: blur(7px);
-        }
-
-        .card-title {
-            margin: 20px 18px 0;
-        }
-
-        .card-text,
-        .card-taste {
-            margin: 5px 18px 0;
-        }
-
         .profileTastes {
-            margin: 0 50px 0;
         }
 
         ul {
@@ -112,9 +84,24 @@
             border-radius: 2px;
             padding: 8px;
 
-            background-color: rgb(199, 199, 199);
+            background-color: rgb(255, 255, 255);
             /* border: 2px solid #fff; */
             border-radius: 50px;
+            /* box-shadow: 0 0 4px; */
+        }
+
+        .card-bio {
+            overflow-y: scroll !important;
+
+            color: #fff;
+            position: fixed;
+
+            bottom: 0;
+            background-color: rgba(70, 70, 70, 0.5);
+            border-radius: inherit;
+            width: inherit;
+            height: 150px;
+            backdrop-filter: blur(7px);
         }
     </style>
 </head>
@@ -123,14 +110,31 @@
     <div id="stacked-cards-block" class="stackedcards stackedcards--animatable init" style="top: 5vw;">
         <div class="stackedcards-container">
             <!-- <div class="card-item"><img src="rami.jpg" style="width: inherit;height: inherit;border-radius: inherit;object-fit: cover;"></div> -->
-            <!-- <div class="card-item">
-                <img class="card-image" src="rami.jpg">
+            <div class="card-item">
+                <img class="card-image" src="content/nojan-namdar-Tuk-oPtCb8I-unsplash.jpg">
                 <div class="card-bio">
-                    <h1 class="card-title">Rami Malek</h1>
-                    <p class="card-taste">Listens to:</p>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate est quis semper suscipit.</p>
+                    <h1 class="card-title">Fatima</h1>
+                    <div class="container2" style="display: flex;">
+                        <p class="card-taste">Listens to:</p>
+                        <span class="profileTastes">
+                            <ul class="genre">
+                                <li>Lorem</li>
+                                <li>Ipsum</li>
+                                <li>Dolor</li>
+                                <li>Sit Amet</li>
+                                <li>Vitae</li>
+                                <li>Donec</li>
+                                <li>Leo Hendrix</li>
+                                <!-- <li>Lacinia</li>
+                                <li>Tempor</li>
+                                <li>Vesti</li>
+                                <li>Velit</li>
+                                <li>Praesent</li> -->
+                            </ul>
+                        </span>
+                    </div>
                 </div>
-            </div> -->
+            </div>
             <div class="card-item"></div>
             <div class="card-item"></div>
             <div class="card-item"></div>
@@ -155,7 +159,9 @@
     <div id="chatOverlay">
         <a id='closeButton' onclick="closeAccOverlay()">✕</a>
         <div class="container1">
-            <div style="background-color: #fff;margin: 20px;height: 200px;width: 85%;box-shadow: 0px 0px 15px;border-radius: 10px;"></div>
+            <div
+                style="background-color: #fff;margin: 20px;height: 200px;width: 85%;box-shadow: 0px 0px 10px;border-radius: 10px;">
+            </div>
         </div>
     </div>
 
@@ -166,7 +172,7 @@
                 style="border-radius: 50%;width: 150px;height: 150px; object-fit: cover" /><br />
             <a class="btnContrast">Edit&nbsp;<i class="fas fa-edit"></i></a><br />
             <p style="margin: 5px;">All my genres</p>
-            <div class="profileTastes">
+            <div class="profileTastes" style="margin: 0 50px 0;">
                 <ul>
                     <li>AAA aaa</li>
                     <li>BBB bbb</li>
@@ -180,9 +186,8 @@
                     <li>LLL lll</li>
                 </ul>
             </div>
-
             <p style="margin: 5px;">All my artists</p>
-            <div class="profileTastes">
+            <div class="profileTastes" style="margin: 0 50px 0;">
                 <ul>
                     <li>AAA aaa</li>
                     <li>BBB bbb</li>
