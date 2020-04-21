@@ -29,9 +29,11 @@
             backdrop-filter: blur(4px);
             top: 0;
             left: 0;
+
+            transition: all 0.3s;
         }
 
-        #loginInputComponent {
+        #loginForm {
             position: fixed;
 
             display: none;
@@ -52,25 +54,42 @@
             color: #fff;
             margin: 10px;
         }
+
+        #div1,
+        #div2,
+        #div3 {
+            display: none;
+        }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/294c752e4f.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
+    <div class="container1">
+        <p id="mainTitle">invibe</p><br>
+        <a class="btnViolet">Sign up</i></a>
+        <br />
+        <a id="loginBtn" onclick="showLoginOverlay()" class="btnPurple">Login</i></a>
+    </div>
+
     <div id='loginOverlay'>
         <a id='closeButton' onclick="closeLoginOverlay()"
             style="position: fixed;top: 0px;right: 10px;font-size: 3em;">✕</a>
         <div class="container1">
-            <a onclick="inputLogin()" class="btnPurple">Login</i></a>
+            <a class="btnPurple" onclick="inputLogin()">Login</i></a>
             <p>Or</p>
             <a class="btnGreen">Login with Spotify&nbsp;<i class="fa fa-spotify"></i></a>
+            <br />
+            <a class="btnGreen">Login with Facebook&nbsp;<i class="fab fa-facebook"></i></i></a>
+
         </div>
     </div>
 
-    <div id="loginInputComponent" style="position: fixed;">
-        <a id='closeButton' onclick="closeLoginInputComponent()"
+    <div id="loginForm" style="position: fixed;">
+        <a id='closeButton' onclick="closeloginForm()"
             style="position: fixed;top: 0px;right: 10px;font-size: 3em;">✕</a>
         <div class="container1">
             <p>Username</p>
@@ -83,34 +102,33 @@
         <br>
     </div>
 
-    <div class="container1">
-        <p id="mainTitle">invibe</p><br>
-        <a class="btnViolet">Sign up</i></a>
-        <br />
-        <a onclick="showLoginOverlay()" class="btnPurple">Login</i></a>
-        <br />
-    </div>
-
     <a href="main.html" style="position: fixed;bottom: 10px;">Go to main menu</a>
     <label href="main.html"
         style="position: fixed;bottom: 7px;right: 10px;color: rgba(255, 255, 255, 0.25);">ver0.0.1</label>
 
     <script>
         const showLoginOverlay = () => {
-            document.getElementById('loginOverlay').style.display = "block";
+            // document.getElementById('loginOverlay').style.display = "block";
+
+            // fadeIn(document.getElementById("loginOverlay"));
+
+            $("#loginOverlay").fadeIn();
         };
 
         const closeLoginOverlay = () => {
-            document.getElementById('loginOverlay').style.display = "none";
-        };
-
-        const closeLoginInputComponent = () => {
-            document.getElementById('loginInputComponent').style.display = "none";
+            // document.getElementById('loginOverlay').style.display = "none";
+            $("#loginOverlay").fadeOut();
         };
 
         const inputLogin = () => {
             document.getElementById('loginOverlay').style.display = "none";
-            document.getElementById('loginInputComponent').style.display = "block";
+            // document.getElementById('loginForm').style.display = "block";
+            // $("#loginOverlay").fadeOut();
+            $("#loginForm").fadeIn();
+        };
+
+        const closeloginForm = () => {
+            $("#loginForm").fadeOut();
         };
     </script>
 </body>
