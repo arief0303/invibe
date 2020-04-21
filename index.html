@@ -53,6 +53,20 @@
             margin: 10px;
         }
 
+        #signOverlay {
+            position: fixed;
+            display: none;
+
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+
+            background-color: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(4px);
+            top: 0;
+            left: 0;
+        }
+
         #signForm {
             position: fixed;
 
@@ -78,7 +92,7 @@
 <body>
     <div class="container1">
         <p id="mainTitle">invibe</p><br>
-        <a class="btnViolet" onclick="showSignForm()">Sign up</i></a>
+        <a class="btnViolet" onclick="showSignOverlay">Sign up</i></a>
         <br />
         <a id="loginBtn" onclick="showLoginOverlay()" class="btnPurple">Login</i></a>
     </div>
@@ -86,7 +100,7 @@
     <div id='loginOverlay'>
         <a id='closeButton' onclick="closeLoginOverlay()">✕</a>
         <div class="container1">
-            <a class="btnPurple" onclick="inputLogin()">Login</i></a>
+            <a class="btnPurple" onclick="changeToInputLogin()">Login</i></a>
             <p>Or</p>
             <a class="btnGreen">Login with Spotify&nbsp;<i class="fa fa-spotify"></i></a>
             <br />
@@ -105,6 +119,18 @@
             <a href="main.html" class="btnViolet">Login</i></a>
         </div>
         <br>
+    </div>
+
+    <div id='signOverlay'>
+        <a id='closeButton' onclick="closeLoginOverlay()">✕</a>
+        <div class="container1">
+            <a class="btnPurple" onclick="changeToInputLogin()">Login</i></a>
+            <p>Or</p>
+            <a class="btnGreen">Login with Spotify&nbsp;<i class="fa fa-spotify"></i></a>
+            <br />
+            <a class="btnBlue">Login with Facebook&nbsp;<i class="fab fa-facebook"></i></i></a>
+
+        </div>
     </div>
 
     <div id="signForm" style="position: fixed;">
@@ -134,7 +160,7 @@
             $("#loginOverlay").fadeOut();
         };
 
-        const inputLogin = () => {
+        const changeToInputLogin = () => {
             document.getElementById('loginOverlay').style.display = "none";
             $("#loginForm").fadeIn();
         };
@@ -142,7 +168,16 @@
         const closeloginForm = () => {
             $("#loginForm").fadeOut();
         };
-        const showSignForm = () => {
+
+        const showSignOverlay = () => {
+            $("#loginOverlay").fadeIn(400);
+        };
+
+        const closeSignOverlay = () => {
+            $("#loginOverlay").fadeOut();
+        };
+
+        const changeToSignForm = () => {
             $('#signForm').fadeIn(400)
         }
         const closeSignForm = () => {
