@@ -1,3 +1,59 @@
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#5d58f6), to(#fe7f7f));
+  background: linear-gradient(180deg, #5d58f6, #fe7f7f);
+  background-size: 400% 400%;
+  -webkit-animation: grad 14s ease infinite;
+  animation: grad 14s ease infinite;
+}
+
+@-webkit-keyframes grad {
+  0% {
+    background-position: 90% 0%;
+  }
+  50% {
+    background-position: 11% 100%;
+  }
+  100% {
+    background-position: 90% 0%;
+  }
+}
+
+@keyframes grad {
+  0% {
+    background-position: 90% 0%;
+  }
+  50% {
+    background-position: 11% 100%;
+  }
+  100% {
+    background-position: 90% 0%;
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-box-shadow: 0 0 20px #1DB954;
+  }
+  50% {
+    -webkit-box-shadow: none;
+  }
+  to {
+    -webkit-box-shadow: 0 0 20px #1DB954;
+  }
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-box-shadow: 0 0 20px #1DB954;
+  }
+  50% {
+    -webkit-box-shadow: none;
+  }
+  to {
+    -webkit-box-shadow: 0 0 20px #1DB954;
+  }
+}
+
 html {
   overflow: hidden;
 }
@@ -9,6 +65,11 @@ html {
 body {
   margin: 0;
   padding: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5d58f6), to(#fe7f7f));
+  background: linear-gradient(180deg, #5d58f6, #fe7f7f);
+  background-size: 400% 400%;
+  -webkit-animation: grad 14s ease infinite;
+  animation: grad 14s ease infinite;
 }
 
 body {
@@ -27,7 +88,15 @@ input {
   color: #000;
 }
 
+#closeButton {
+  position: fixed;
+  top: 0px;
+  right: 10px;
+  font-size: 3em;
+}
+
 .btnContrast {
+  display: inherit;
   background-color: #fff;
   border: 2px solid #000;
   border-radius: 50px;
@@ -36,51 +105,74 @@ input {
   text-decoration: none;
   padding: 10px;
   color: #000;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .btnPurple {
-  text-decoration: none;
+  display: inherit;
   background-color: #fff;
-  outline: none;
-  cursor: pointer;
-  padding: 10px;
   border: 2px solid #fff;
-  color: #000;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   border-radius: 50px;
+  outline: none;
   text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .btnViolet {
-  text-decoration: none;
+  display: inherit;
   background-color: #fff;
-  outline: none;
-  cursor: pointer;
-  padding: 10px;
   border: 2px solid #fff;
-  color: #000;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   border-radius: 50px;
+  outline: none;
   text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .btnGreen {
-  text-decoration: none;
+  display: inherit;
   background-color: #fff;
-  outline: none;
-  cursor: pointer;
-  padding: 10px;
   border: 2px solid #fff;
-  color: #000;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   border-radius: 50px;
+  outline: none;
   text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  /*
+    -webkit-animation-name: pulse;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    */
+}
+
+.btnBlue {
+  display: inherit;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .btnPurple:hover,
@@ -98,6 +190,13 @@ input {
 .btnGreen:hover,
 .btnGreen:active {
   color: #fff;
-  background: #1DB954;
+  background-color: #1DB954;
+  -webkit-animation: none;
+}
+
+.btnBlue:hover,
+.btnBlue:active {
+  color: #fff;
+  background: #3b5998;
 }
 /*# sourceMappingURL=style-basic.css.map */
