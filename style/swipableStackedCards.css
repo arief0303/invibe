@@ -6,15 +6,6 @@
      object-fit: cover;
 }
 
-.card-title {
-  margin: 20px 18px 0;
-}
-
-.card-text,
-.card-taste {
-  margin: 5px 18px 0;
-}
-
 .no-transition {
   -webkit-transition: none !important;
   transition: none !important;
@@ -100,15 +91,15 @@
 }
 
 .stackedcards-overlay.top {
-  background: #E38568;
+  background: #ff9575;
 }
 
 .stackedcards-overlay.right {
-  background: #7BB3C5;
+  background: #fe7f7f;
 }
 
 .stackedcards-overlay.left {
-  background: #E58D93;
+  background: #5555ff;
 }
 
 .stackedcards-overlay.left:empty,

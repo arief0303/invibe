@@ -18,14 +18,14 @@
     object-fit: cover;
 }
 
-.card-title {
-    margin: 20px 18px 0;
-}
+// .card-title {
+//     margin: 20px 18px 0;
+// }
 
-.card-text,
-.card-taste {
-    margin: 5px 18px 0;
-}
+// .card-text,
+// .card-taste {
+//     margin: 5px 18px 0;
+// }
 
 //swipeablecards
 .no-transition {
@@ -116,15 +116,15 @@
 }
 
 .stackedcards-overlay.top {
-    background: #E38568;
+    background: rgb(255, 149, 117);
 }
 
 .stackedcards-overlay.right {
-    background: #7BB3C5;
+    background: #fe7f7f;
 }
 
 .stackedcards-overlay.left {
-    background: #E58D93;
+    background: rgb(85, 85, 255);
 }
 
 .stackedcards-overlay.left:empty,

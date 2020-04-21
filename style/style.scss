@@ -123,6 +123,13 @@ input {
     transition: all 0.5s;
 }
 
+
+.btnBlue:hover,
+.btnBlue:active {
+    color: #fff;
+    background: #400AFF;
+}
+
 .btnPurple:hover,
 .btnPurple:active {
     color: #fff;
@@ -140,12 +147,6 @@ input {
     color: #fff;
     background-color: #1DB954; //spotify pallete
     -webkit-animation: none;
-}
-
-.btnBlue:hover,
-.btnBlue:active {
-    color: #fff;
-    background: #3b5998;
 }
 
 //navbar

@@ -63,8 +63,7 @@
             z-index: 99;
         }
 
-        .profileTastes {
-        }
+        .profileTastes {}
 
         ul {
             list-style-type: none;
@@ -103,6 +102,15 @@
             height: 150px;
             backdrop-filter: blur(7px);
         }
+
+        .card-text {
+            text-align: center;
+            margin: auto 18px auto;
+        }
+
+        .card-title {
+            margin: 20px 18px 5px;
+        }
     </style>
 </head>
 
@@ -115,17 +123,17 @@
                 <div class="card-bio">
                     <h1 class="card-title">Fatima</h1>
                     <div class="container2" style="display: flex;">
-                        <p class="card-taste">Listens to:</p>
+                        <p class="card-text">Listens to:</p>
                         <span class="profileTastes">
                             <ul class="genre">
-                                <li>Lorem</li>
-                                <li>Ipsum</li>
-                                <li>Dolor</li>
-                                <li>Sit Amet</li>
-                                <li>Vitae</li>
+                                <li>House</li>
+                                <li>Electronics</li>
+                                <li>Techno</li>
+                                <li>DnB</li>
+                                <!--<li>Vitae</li>
                                 <li>Donec</li>
                                 <li>Leo Hendrix</li>
-                                <!-- <li>Lacinia</li>
+                                 <li>Lacinia</li>
                                 <li>Tempor</li>
                                 <li>Vesti</li>
                                 <li>Velit</li>
@@ -157,7 +165,7 @@
     </div>-->
 
     <div id="chatOverlay">
-        <a id='closeButton' onclick="closeAccOverlay()">✕</a>
+        <a id='closeButton' onclick="closeChatOverlay()" style="color: #fff;">✕</a>
         <div class="container1">
             <div
                 style="background-color: #fff;margin: 20px;height: 200px;width: 85%;box-shadow: 0px 0px 10px;border-radius: 10px;">
@@ -205,8 +213,9 @@
     </div>
 
     <div class="navbar">
-        <a class="btnPurple"><i class="fas fa-sliders-h"></i></a>
-        <a class="btnPurple"><i class="fas fa-comment-alt"></i></a>
+        <a class="btnBlue" style="border-radius: 10px;"><i class="fas fa-sliders-h"></i></a>
+        <a class="btnPurple" onclick="showChatOverlay()" style="border-radius: 18px;"><i
+                class="fas fa-comment-alt"></i></a>
         <!-- <p>invibe</p> -->
         <a class="btnViolet" onclick="showAccOverlay()"><i class="fas fa-user-circle"></i></i></a>
     </div>
@@ -219,6 +228,12 @@
         const closeAccOverlay = () => {
             $("#accountOverlay").fadeOut(400);
         };
+        const showChatOverlay = () => {
+            $('#chatOverlay').fadeIn(400);
+        }
+        const closeChatOverlay = () => {
+            $('#chatOverlay').fadeOut(400);
+        }
     </script>
 </body>
 
