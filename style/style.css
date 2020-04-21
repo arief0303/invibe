@@ -274,8 +274,6 @@ input {
   text-decoration: none;
   padding: 10px;
   color: #000;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   cursor: pointer;
 }
 
@@ -289,8 +287,6 @@ input {
   text-decoration: none;
   padding: 10px;
   color: #000;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   cursor: pointer;
 }
 
@@ -304,8 +300,6 @@ input {
   text-decoration: none;
   padding: 10px;
   color: #000;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   cursor: pointer;
 }
 
@@ -319,8 +313,6 @@ input {
   text-decoration: none;
   padding: 10px;
   color: #000;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   cursor: pointer;
   /*
     -webkit-animation-name: pulse;

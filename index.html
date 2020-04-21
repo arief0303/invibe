@@ -29,8 +29,6 @@
             backdrop-filter: blur(4px);
             top: 0;
             left: 0;
-
-            transition: all 0.3s;
         }
 
         #loginForm {
@@ -55,10 +53,20 @@
             margin: 10px;
         }
 
-        #div1,
-        #div2,
-        #div3 {
+        #signForm {
+            position: fixed;
+
             display: none;
+            /* display: block; */
+
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+
+            background-color: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(4px);
+            top: 0;
+            left: 0;
         }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
@@ -70,7 +78,7 @@
 <body>
     <div class="container1">
         <p id="mainTitle">invibe</p><br>
-        <a class="btnViolet">Sign up</i></a>
+        <a class="btnViolet" onclick="showSignForm()">Sign up</i></a>
         <br />
         <a id="loginBtn" onclick="showLoginOverlay()" class="btnPurple">Login</i></a>
     </div>
@@ -88,7 +96,7 @@
         </div>
     </div>
 
-    <div id="loginForm" style="position: fixed;">
+    <div id="loginForm">
         <a id='closeButton' onclick="closeloginForm()"
             style="position: fixed;top: 0px;right: 10px;font-size: 3em;">✕</a>
         <div class="container1">
@@ -97,7 +105,21 @@
             <p>Password</p>
             <input type="text" id="lname" name="lname" value="******"><br>
             <a href="main.html" class="btnViolet">Login</i></a>
+        </div>
+        <br>
+    </div>
 
+    <div id="signForm" style="position: fixed;">
+        <a id='closeButton' onclick="closeSignForm()"
+            style="position: fixed;top: 0px;right: 10px;font-size: 3em;">✕</a>
+        <div class="container1">
+            <p>Username</p>
+            <input type="text" id="fname" name="fname" value="John Appleseed"><br>
+            <p>Password</p>
+            <input type="text" id="lname" name="lname" value="******"><br>
+            <p>Repeat password</p>
+            <input type="text" id="lname" name="lname" value="******"><br>
+            <a href="main.html" class="btnViolet">Sign in</i></a>
         </div>
         <br>
     </div>
@@ -108,28 +130,27 @@
 
     <script>
         const showLoginOverlay = () => {
-            // document.getElementById('loginOverlay').style.display = "block";
-
-            // fadeIn(document.getElementById("loginOverlay"));
-
-            $("#loginOverlay").fadeIn();
+            $("#loginOverlay").fadeIn(400);
         };
 
         const closeLoginOverlay = () => {
-            // document.getElementById('loginOverlay').style.display = "none";
             $("#loginOverlay").fadeOut();
         };
 
         const inputLogin = () => {
             document.getElementById('loginOverlay').style.display = "none";
-            // document.getElementById('loginForm').style.display = "block";
-            // $("#loginOverlay").fadeOut();
             $("#loginForm").fadeIn();
         };
 
         const closeloginForm = () => {
             $("#loginForm").fadeOut();
         };
+        const showSignForm = () => {
+            $('#signForm').fadeIn(400)
+        }
+        const closeSignForm = () => {
+            $('#signForm').fadeOut()
+        }
     </script>
 </body>
 
