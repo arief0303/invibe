@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/294c752e4f.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <style>
         .container1 {
             width: 100%;
@@ -51,6 +58,18 @@
             font-size: 4em;
             color: #fff;
             margin: 10px;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        #subTitle {
+            font-size: 2em;
+            padding: 0;
+            margin: 0;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 100;
+            /* margin: 10px; */
         }
 
         #signOverlay {
@@ -84,42 +103,15 @@
             left: 0;
         }
     </style>
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <script src="https://kit.fontawesome.com/294c752e4f.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
     <div class="container1">
-        <p id="mainTitle">invibe</p><br>
-        <a class="btnViolet" onclick="showSignOverlay()">Sign up</a>
-        <br />
-        <a id="loginBtn" onclick="showLoginOverlay()" class="btnPurple">Login</i></a>
-    </div>
-
-    <div id='loginOverlay'>
-        <a id='closeButton' onclick="closeLoginOverlay()">✕</a>
-        <div class="container1">
-            <a class="btnPurple" onclick="changeToInputLogin()">Login</i></a>
-            <p>Or</p>
-            <a class="btnGreen">Login with Spotify&nbsp;<i class="fa fa-spotify"></i></a>
-            <br />
-            <a class="btnBlue">Login with Facebook&nbsp;<i class="fab fa-facebook"></i></i></a>
-
-        </div>
-    </div>
-
-    <div id="loginForm">
-        <a id='closeButton' onclick="closeloginForm()">✕</a>
-        <div class="container1">
-            <p>Username</p>
-            <input type="text" id="fname" name="fname" value="John Appleseed"><br>
-            <p>Password</p>
-            <input type="text" id="lname" name="lname" value="******"><br>
-            <a href="main.html" class="btnViolet">Login</i></a>
-        </div>
-        <br>
+        <h1 id="mainTitle">invibe</h1>
+        <h2 id="subTitle">softworks</h2><br>
+        <!-- <a class="btnViolet" onclick="showSignOverlay()">Sign up</a>
+        <br /> -->
+        <!-- <a id="loginBtn" onclick="showLoginOverlay()" class="btnPurple">Login</i></a> -->
     </div>
 
     <div id='signOverlay'>
@@ -149,8 +141,7 @@
     </div>
 
     <!-- <a href="main.html" style="position: fixed;bottom: 7px; right: 10px;">Go to main menu</a> -->
-    <label href="main.html"
-        style="position: fixed;bottom: 7px;color: rgba(255, 255, 255, 0.25);">DEVELOPER BUILD ver0.1.0</label>
+    <!-- <label href="main.html" style="position: fixed;bottom: 7px;color: rgba(255, 255, 255, 0.25);">DEVELOPER BUILD ver0.1.0</label> -->
 
     <script>
         const showLoginOverlay = () => {

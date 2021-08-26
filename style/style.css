@@ -248,7 +248,6 @@ html {
 
 body {
   margin: 0;
-  padding: 10px;
   background: -webkit-gradient(linear, left top, left bottom, from(#5d58f6), to(#fe7f7f));
   background: linear-gradient(180deg, #5d58f6, #fe7f7f);
   background-size: 400% 400%;
@@ -281,7 +280,6 @@ input {
 
 .btnContrast {
   display: inherit;
-  background-color: #fff;
   border: 2px solid #000;
   border-radius: 50px;
   outline: none;
@@ -384,6 +382,14 @@ input {
   -webkit-animation: none;
 }
 
+.header {
+  background-color: white;
+  height: 120px;
+  width: 100%;
+  -webkit-box-shadow: 2px 2px 15px #000;
+          box-shadow: 2px 2px 15px #000;
+}
+
 .navbar {
   position: absolute;
   -webkit-box-shadow: 2px 2px 15px #000;
@@ -400,10 +406,9 @@ input {
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
-  height: 75px;
+  height: 60px;
   width: 100%;
   font-size: 2em;
-  border-radius: 10px 10px 0px 0px;
   z-index: 98;
   -webkit-transition: opacity 2s ease-in;
   transition: opacity 2s ease-in;
